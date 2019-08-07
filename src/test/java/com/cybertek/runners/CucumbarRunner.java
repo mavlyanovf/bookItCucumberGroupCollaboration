@@ -9,8 +9,9 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = "com/cybertek/step_definitions"
-//        ,dryRun=true
-        ,        tags = "@wip"
+
+        ,dryRun=false
+        ,tags = "@wip or @learn"
 )
 public class CucumbarRunner {
 }

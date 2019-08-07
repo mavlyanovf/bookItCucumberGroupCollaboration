@@ -11,14 +11,14 @@ import java.util.concurrent.TimeUnit;
 
 public class Hooks {
 
-    @Before
+    @Before(order = 0)
     public void setUp(){
         Driver.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         Driver.getDriver().manage().window().maximize();
         System.out.println("I am setting up the test from the Hooks class!");
     }
 
-//    @After
+    @After
     public void tearDown(Scenario scenario){
         System.out.println("I am reporting the results");
 //       To take screenshot when current scenario fails

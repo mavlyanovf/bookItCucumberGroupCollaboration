@@ -12,10 +12,10 @@ Feature: Home page
     Then homepage should be displayed
 #    And the Title should be correct
 
-
-    Scenario: login as a team member
+    @learn
+    Scenario: login as a student team member
 #    Given user on the login page
-      When user logs in as a team member
+      When user logs in as a student team member
       Then homepage should be displayed
 
    @teacher

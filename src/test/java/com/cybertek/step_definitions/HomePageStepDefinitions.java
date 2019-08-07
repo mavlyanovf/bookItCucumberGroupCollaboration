@@ -43,10 +43,18 @@ public class HomePageStepDefinitions {
 
     }
 
-    @When("user logs in as a team member")
-    public void user_logs_in_as_a_team_member() {
-        System.out.println("logging as team member");
+    @When("user logs in as a student team member")
+    public void user_logs_in_as_a_student_team_member() {
+        System.out.println("logging as a student team member");
+        //Do I have to use SignInPage every time to sign in?
+        SignInPage studentSigns=new SignInPage();
+        studentSigns.emailLocator.sendKeys(ConfigurationReader.getProperty("student_username"));
+        studentSigns.passwordLocator.sendKeys(ConfigurationReader.getProperty("student_password"));
+        studentSigns.signInButtonLocator.click();
     }
+
+
+
 
     @When("user logs in as a teacher")
     public void user_logs_in_as_a_teacher() {
