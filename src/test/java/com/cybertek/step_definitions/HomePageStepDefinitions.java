@@ -11,7 +11,7 @@ import cucumber.api.java.en.When;
 import org.junit.Assert;
 
 public class HomePageStepDefinitions {
-
+    SignInPage signin=new SignInPage();
 
     @Given("user on the login page")
     public void user_on_the_login_page() {
@@ -25,10 +25,10 @@ public class HomePageStepDefinitions {
         System.out.println("email: "+ConfigurationReader.getProperty("leader_email"));
         System.out.println("password: "+ConfigurationReader.getProperty("leader_password"));
 
-        SignInPage signInPage= new SignInPage();
-        signInPage.emailLocator.sendKeys(ConfigurationReader.getProperty("leader_email"));
-        signInPage.passwordLocator.sendKeys(ConfigurationReader.getProperty("leader_password"));
-        signInPage.signInButtonLocator.click();
+
+        signin.emailLocator.sendKeys(ConfigurationReader.getProperty("leader_email"));
+        signin.passwordLocator.sendKeys(ConfigurationReader.getProperty("leader_password"));
+        signin.signInButtonLocator.click();
     }
 
     @Then("homepage should be displayed")
@@ -43,14 +43,27 @@ public class HomePageStepDefinitions {
 
     }
 
-    @When("user logs in as a team member")
-    public void user_logs_in_as_a_team_member() {
-        System.out.println("logging as team member");
+    @When("user logs in as a student team member")
+    public void user_logs_in_as_a_student_team_member() {
+        System.out.println("logging as a student team member");
+        //Do I have to use SignInPage every time to sign in?
+
+        signin.emailLocator.sendKeys(ConfigurationReader.getProperty("student_username"));
+        signin.passwordLocator.sendKeys(ConfigurationReader.getProperty("student_password"));
+        signin.signInButtonLocator.click();
     }
+
+
+
 
     @When("user logs in as a teacher")
     public void user_logs_in_as_a_teacher() {
         System.out.println("logging as teacher");
+        signin.emailLocator.sendKeys(ConfigurationReader.getProperty("team_leademail"));
+        signin.passwordLocator.sendKeys(ConfigurationReader.getProperty("team_leadpassword"));
+         signin.signInButtonLocator.click();
+
+
     }
 
 

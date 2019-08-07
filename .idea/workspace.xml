@@ -3,6 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="5a3433b6-c62a-4550-b67e-645816b23f63" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/runners/CucumbarRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/runners/CucumbarRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/HomePageStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/HomePageStepDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/homepage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/homepage.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cybertek/step_definitions/HomePageStepDefinitions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cybertek/step_definitions/HomePageStepDefinitions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/homepage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/homepage.feature" afterDir="false" />
+>>>>>>> test
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +39,11 @@
       </MavenImportingSettings>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="ProjectId" id="1P4NIN1tPwZGx6MpSlLkqYP3i6Z" />
+=======
+  <component name="ProjectId" id="1P4tBj4KwbFy2b8d8KWGCPOJW5m" />
+>>>>>>> test
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
@@ -48,7 +61,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CucumbarRunner">
+  <component name="RunManager" selected="JUnit.CucumbarRunner (1)">
     <configuration name="Feature: homepage" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="4" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/homepage.feature" />
@@ -67,14 +80,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: login as team lead" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: login as a student team member" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="4" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/homepage.feature" />
+      <option name="GLUE" value="com.cybertek.step_definitions" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="bookItApplicationTest" />
-      <option name="NAME_FILTER" value="^login as team lead$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm4SMFormatter --name &quot;^login as team lead$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: login as team lead" />
+      <module name="bookItCucumberGroupCollaboration" />
+      <option name="NAME_FILTER" value="^login as a student team member$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm4SMFormatter --name &quot;^login as a student team member$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: login as a student team member" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -104,6 +118,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CucumbarRunner (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bookItCucumberGroupCollaboration" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cybertek.runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cybertek.runners" />
+      <option name="MAIN_CLASS_NAME" value="com.cybertek.runners.CucumbarRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CucumbarRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bookItApplicationTest" />
       <extension name="coverage">
@@ -121,10 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CucumbarRunner (1)" />
+        <item itemvalue="Cucumber java.Scenario: login as a student team member" />
         <item itemvalue="JUnit.CucumbarRunner" />
         <item itemvalue="Cucumber java.Scenario: " />
         <item itemvalue="Cucumber java.Feature: homepage" />
-        <item itemvalue="Cucumber java.Scenario: login as team lead" />
       </list>
     </recent_temporary>
   </component>
@@ -141,6 +171,7 @@
     </task>
     <servers />
   </component>
+<<<<<<< HEAD
   <component name="TestHistory">
     <history-entry file="CucumbarRunner - 2019.08.06 at 07h 03m 44s.xml">
       <configuration name="CucumbarRunner" configurationId="JUnit" />
@@ -173,6 +204,8 @@
       <configuration name="CucumbarRunner" configurationId="JUnit" />
     </history-entry>
   </component>
+=======
+>>>>>>> test
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
